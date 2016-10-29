@@ -21,7 +21,7 @@ export default function ({
 
                     if (name === "__COMPILE_SRC") {
                         // Convert to a string
-                        let root = path.dirname(this.file.parserOpts.filename);
+                        let root = path.dirname(this.file.parserOpts.filename ||  this.file.parserOpts.sourceFileName);
                         let filePath = path.join(root, val);
                         val = fs.readFileSync(filePath, { encoding: 'utf8' }).replace(/\r\n/g, "\n").replace(/\r?\n$/, "");
                     }
