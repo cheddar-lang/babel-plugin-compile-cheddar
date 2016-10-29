@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-cheddar-compile",
+  "name": "babel-plugin-compile-cheddar",
   "version": "1.2.1",
   "description": "Pre-parses cheddar to an AST",
   "main": "lib/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheddar-lang/babel-plugin-cheddar-compile.git"
+    "url": "git+https://github.com/cheddar-lang/babel-plugin-compile-cheddar.git"
   },
   "author": "Vihan B <vihan@vihan.org> (vihan.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cheddar-lang/babel-plugin-cheddar-compile/issues"
+    "url": "https://github.com/cheddar-lang/babel-plugin-compile-cheddar/issues"
   },
-  "homepage": "https://github.com/cheddar-lang/babel-plugin-cheddar-compile#readme",
+  "homepage": "https://github.com/cheddar-lang/babel-plugin-compile-cheddar#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.18.0",
