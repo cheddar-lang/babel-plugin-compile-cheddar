@@ -26,12 +26,16 @@ export default function ({
                         val = fs.readFileSync(filePath, { encoding: 'utf8' }).replace(/\r\n/g, "\n").replace(/\r?\n$/, "");
                     }
 
+                    let funcName = ( /^# ([A-Za-z0-9]+)/.exec(val) || [, null] )[1];
+
                     let run = new ches(val, 0);
                     let res = run.exec();
 
                     if (!(res instanceof ches.Lexer)) {
                         throw new SyntaxError(res);
                     }
+
+                    res.PreCompiledNodeName = funcName;
 
                     p.replaceWith(
                         valueToNode(res)
