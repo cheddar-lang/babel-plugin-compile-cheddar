@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-compile-cheddar",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Pre-parses cheddar to an AST",
   "main": "lib/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "babel-types": "^6.18.0",
-    "cheddar-parser": "^0.1.5",
+    "cheddar-parser": "^0.2.0",
     "lodash": "^4.16.4"
   }
 }
