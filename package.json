@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "babel-types": "^6.18.0",
-    "cheddar-parser": "^0.2.0",
+    "cheddar-parser": "*",
     "lodash": "^4.16.4"
   }
 }
