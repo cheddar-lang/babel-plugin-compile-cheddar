@@ -46,7 +46,7 @@ export default function valueToNode(value) {
   // object
   let props = [];
   for (let key in value) {
-    if (value.hasOwnProperty(key)) {
+    if (value.hasOwnProperty(key) && key !== "Code") {
         let nodeKey;
         if (t.isValidIdentifier(key)) {
           nodeKey = t.identifier(key);

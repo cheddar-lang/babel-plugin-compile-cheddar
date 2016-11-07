@@ -2,32 +2,25 @@
 
 ({
   isExpression: false,
-  Code: "1 + 1",
-  Index: 6,
+  Index: 7,
   _Tokens: [{
     isExpression: false,
-    Code: "1 + 1",
-    Index: 5,
+    Index: 6,
     _Tokens: [{
       isExpression: true,
-      Code: "1 + 1",
-      Index: 5,
+      Index: 6,
       _Tokens: [{
         isExpression: true,
-        Code: "1 + 1",
-        Index: 1,
+        Index: 2,
         _Tokens: [{
           isExpression: false,
-          Code: "1 + 1",
-          Index: 1,
+          Index: 2,
           _Tokens: [{
             isExpression: false,
-            Code: "1 + 1",
-            Index: 1,
+            Index: 2,
             _Tokens: [{
               isExpression: false,
-              Code: "1 + 1",
-              Index: 1,
+              Index: 2,
               _Tokens: [10, 0, "1"],
               "constructor": {
                 "name": "CheddarNumberToken"
@@ -51,36 +44,29 @@
         }
       }, {
         isExpression: true,
-        Code: "1 + 1",
-        Index: 5,
+        Index: 6,
         _Tokens: [{
           isExpression: false,
-          Code: "1 + 1",
-          Index: 3,
+          Index: 4,
           _Tokens: ["+"],
           "constructor": {
             "name": "CheddarOperatorToken"
           }
         }, {
           isExpression: true,
-          Code: "1 + 1",
-          Index: 5,
+          Index: 6,
           _Tokens: [{
             isExpression: true,
-            Code: "1 + 1",
-            Index: 5,
+            Index: 6,
             _Tokens: [{
               isExpression: false,
-              Code: "1 + 1",
-              Index: 5,
+              Index: 6,
               _Tokens: [{
                 isExpression: false,
-                Code: "1 + 1",
-                Index: 5,
+                Index: 6,
                 _Tokens: [{
                   isExpression: false,
-                  Code: "1 + 1",
-                  Index: 5,
+                  Index: 6,
                   _Tokens: [10, 0, "1"],
                   "constructor": {
                     "name": "CheddarNumberToken"
@@ -119,6 +105,7 @@
       "name": "StatementExpression"
     }
   }],
+  PreCompiledNodeName: "Addition",
   "constructor": {
     "name": "CheddarTokenize"
   }
