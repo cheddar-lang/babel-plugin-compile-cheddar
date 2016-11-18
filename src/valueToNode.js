@@ -45,8 +45,9 @@ export default function valueToNode(value) {
 
   // object
   let props = [];
+  let excludedKeys = ["Code", "isExpression"];
   for (let key in value) {
-    if (value.hasOwnProperty(key) && key !== "Code") {
+    if (value.hasOwnProperty(key) && excludedKeys.indexOf(key) === -1) {
         let nodeKey = t.stringLiteral(key);
         props.push(t.objectProperty(nodeKey, valueToNode(value[key])));
     }
